@@ -25,8 +25,8 @@ export async function POST(req, res) {
     // },
     line_items: modifiedItems,
     mode: "payment",
-    success_url: process.env.NEXTAUTH_URL + "/sucess",
-    cancel_url: process.env.NEXTAUTH_URL + "/cart",
+    success_url: "/sucess",
+    cancel_url: "/cart",
   });
 
   return NextResponse.json({ id: sesssion.id }, { status: 200 });
