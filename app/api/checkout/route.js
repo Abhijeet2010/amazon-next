@@ -25,8 +25,8 @@ export async function POST(req, res) {
     // },
     line_items: modifiedItems,
     mode: "payment",
-    success_url: "/sucess",
-    cancel_url: "/cart",
+    success_url: "https://amazon-next-virid.vercel.app/sucess",
+    cancel_url: "https://amazon-next-virid.vercel.app/",
   });
 
   return NextResponse.json({ id: sesssion.id }, { status: 200 });
